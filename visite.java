@@ -14,17 +14,38 @@ public class visite {
 		this.date=date;
 		this.note=note;
 	}
-	String getNom()
+	public String getNom()
 	{
 		return this.nom_etudiant;
 	}
-	String getDate()
+	public String getDate()
 	{
 		return this.date;
 	}
-	int getNote()
+	public int getNote()
 	{
 		return this.note;
+	}
+	public void setNom(String i)
+	{
+		this.nom_etudiant= i;
+	}
+	public void setDate(String i)
+	{
+		this.date= i;
+	}
+	public String getNom_etudiant() {
+		return nom_etudiant;
+	}
+	public void setNom_etudiant(String nom_etudiant) {
+		this.nom_etudiant = nom_etudiant;
+	}
+	public void setNote(int note) {
+		this.note = note;
+	}
+	public String toString()
+	{
+		
 	}
 	public static void main(String[]args)
 	{
