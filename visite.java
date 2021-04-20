@@ -3,13 +3,20 @@ public class visite {
 	String nom_etudiant = "cheriet";
 	String date = "21 janvier 2015";
 	int note = 12;
-	visite()
-	{
-		
+	public visite()
+	{//contructeur vide
+		this.nom_etudiant=new String();
+		this.date=new String();
 	}
-	visite(int note, String date, String nom_etudiant)
+	public visite(int note, String date, String nom)
+	{//contruceur plein
+		this.nom_etudiant = nom;
+		this.date=date;
+		this.note=note;
+	}
+	String getNom_etudiant()
 	{
-		
+		return this.nom_etudiant;
 	}
 	public static void main(String[]args)
 	{
