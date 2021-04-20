@@ -15,5 +15,6 @@ public class visite {
 	{
 		visite v1 = new visite();
 		visite v2 = new visite(14, "15 fevirer 1999", "jean-rachid");
+		System.out.println(v1);
 	}
 }
