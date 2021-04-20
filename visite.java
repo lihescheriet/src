@@ -45,7 +45,7 @@ public class visite {
 	}
 	public String toString()
 	{
-		
+		return "visite de nom"+this.nom_etudiant+"visite de date"+this.date+"visite de note"+this.note;
 	}
 	public static void main(String[]args)
 	{
