@@ -1,3 +1,4 @@
+import tools.DateUS;
 
 public class visite {
 	String nom_etudiant = "cheriet";
@@ -37,6 +38,9 @@ public class visite {
 	public String getNom_etudiant() {
 		return nom_etudiant;
 	}
+	/**
+	 * @param nom_etudiant
+	 */
 	public void setNom_etudiant(String nom_etudiant) {
 		this.nom_etudiant = nom_etudiant;
 	}
@@ -54,5 +58,6 @@ public class visite {
 		System.out.println(v1);
 		System.out.println(v2);
 		System.out.println(v2.nom_etudiant.charAt(2));
+		System.out.println(DateUS.dateFRtoUS("24/02/1998"));
 	}
 }

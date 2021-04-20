@@ -34,7 +34,7 @@ public class DateUS {
 		 * @param date String
 		 * @return newDate type String
 		 */
-		public String dateFRtoUS(String date) {
+		public static String dateFRtoUS(String date) {
 			String[] dateHash = date.split("/");
 			String year = dateHash[2];
 			String month = dateHash[1];
@@ -56,4 +56,8 @@ public class DateUS {
 			String newDate = day+"/"+month+"/"+year;
 			return newDate;
 		}
+		//public static void main (String[] args) {
+			
+			//System.out.println(DateUS.dateFRtoUS("24/02/1998"));
+		//}
 	}
