@@ -14,9 +14,17 @@ public class visite {
 		this.date=date;
 		this.note=note;
 	}
-	String getNom_etudiant()
+	String getNom()
 	{
 		return this.nom_etudiant;
+	}
+	String getDate()
+	{
+		return this.date;
+	}
+	int getNote()
+	{
+		return this.note;
 	}
 	public static void main(String[]args)
 	{
