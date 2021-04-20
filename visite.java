@@ -11,4 +11,8 @@ public class visite {
 	{
 		
 	}
+	public static void main(String[]args)
+	{
+		
+	}
 }
