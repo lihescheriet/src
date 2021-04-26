@@ -1,11 +1,15 @@
 package starwars;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Film {
 	 	private String titre;
 	    private String anneeDeSortie;
 	    private String numeroEpisode;
 	    private double cout;
 	    private double recette;
+	    private ArrayList Acteur = new ArrayList();
 	    
 	    /**
 	     * Constructor
@@ -29,6 +33,25 @@ public class Film {
 	        this.numeroEpisode = numeroEpisode;
 	        this.cout = cout;
 	        this.recette = recette;
+	    }
+	    public Film(boolean nouveauFilm) {
+	    	Scanner sc = new Scanner(System.in);
+			System.out.println("Veuillez ecrire le Titre du film :");
+			this.titre = sc.nextLine();
+			System.out.println("Vous avez saisi : " + this.titre);
+			System.out.println("Veuillez ecrire l'Année de sorti du Film :");
+			this.anneeDeSortie = sc.nextLine();
+			System.out.println("Vous avez Saisi : " + this.anneeDeSortie);
+			System.out.println("Veuillez ecrire l'épisode:");
+			this.numeroEpisode = sc.nextLine();
+			System.out.println("Vous avez Saisi : " + this.numeroEpisode);
+			System.out.println("Veuillez ecrire le Cout:");
+			this.cout = sc.nextDouble();
+			System.out.println("Vous avez Saisi : " + this.cout);
+			System.out.println("Veuillez ecrire la recette:");
+			this.recette = sc.nextDouble();
+			System.out.println("Vous avez Saisi : " + this.recette);
+			sc.close();
 	    }
 
 	    // The methods of basic getter below.

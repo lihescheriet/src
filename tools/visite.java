@@ -1,5 +1,4 @@
-import tools.DateUS;
-
+package tools;
 public class visite {
 	String nom_etudiant = "cheriet";
 	String date = "21 janvier 2015";
